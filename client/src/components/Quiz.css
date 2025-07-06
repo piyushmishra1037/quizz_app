@@ -1,0 +1,117 @@
+.quiz-container {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.quiz-header {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.quiz-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-card h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option:hover {
+    background-color: #f8f9fa;
+}
+
+.option input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.option label {
+    color: #555;
+}
+
+.next-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+.next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.results {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.results h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.results p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.back-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
