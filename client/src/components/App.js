@@ -1,11 +1,13 @@
 import '../styles/App.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import React from 'react';
 
 /** import components */
 import Main from './Main';
 import Quiz from './Quiz';
 import Result from './Result';
+import QuizList from './QuizList';
 import { CheckUserExist } from '../helper/helper';
 
 
@@ -27,9 +29,14 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
+    <div style={{
+      maxWidth: '800px',
+      margin: '0 auto',
+      fontFamily: 'Arial, sans-serif'
+    }}>
       <RouterProvider router={router} />
-    </>
+      <QuizList />
+    </div>
   );
 }
 
